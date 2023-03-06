@@ -4,11 +4,11 @@
 #include <string.h>
 #include <math.h>
 
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_complex.h>
+#include <gsl_errno.h>
+#include <gsl_complex.h>
 
-#include <gsl/gsl_fft_complex.h>
-#include <gsl/gsl_fft_complex_float.h>
+#include <gsl_fft_complex.h>
+#include <gsl_fft_complex_float.h>
 
 #define BASE_DOUBLE
 #include "../../gsl/templates_on.h"
@@ -54,8 +54,8 @@
 #include "../../gsl/templates_off.h"
 #undef  BASE_FLOAT
 
-#include <gsl/gsl_fft_halfcomplex.h>
-#include <gsl/gsl_fft_halfcomplex_float.h>
+#include <gsl_fft_halfcomplex.h>
+#include <gsl_fft_halfcomplex_float.h>
 
 #define BASE_DOUBLE
 #include "../../gsl/templates_on.h"
@@ -85,8 +85,8 @@
 #include "../../gsl/templates_off.h"
 #undef  BASE_FLOAT
 
-#include <gsl/gsl_fft_real.h>
-#include <gsl/gsl_fft_real_float.h>
+#include <gsl_fft_real.h>
+#include <gsl_fft_real_float.h>
 
 #define BASE_DOUBLE
 #include "../../gsl/templates_on.h"

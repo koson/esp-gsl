@@ -21,9 +21,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_complex.h>
-#include <gsl/gsl_fft_halfcomplex.h>
+#include <gsl_errno.h>
+#include <gsl_complex.h>
+#include <gsl_fft_halfcomplex.h>
 
 #include "../../gsl/fft/hc_pass.h"
 

@@ -1,12 +1,12 @@
 #include <config.h>
 #include <math.h>
 #include <stdlib.h>
-#include <gsl/gsl_math.h>
-#include <gsl/gsl_complex.h>
-#include <gsl/gsl_errno.h>
+#include <gsl_math.h>
+#include <gsl_complex.h>
+#include <gsl_errno.h>
 
-#include <gsl/gsl_dft_complex.h>
-#include <gsl/gsl_dft_complex_float.h>
+#include <gsl_dft_complex.h>
+#include <gsl_dft_complex_float.h>
 
 #include "../../gsl/fft/complex_internal.h"
 #include "../../gsl/fft/urand.c"

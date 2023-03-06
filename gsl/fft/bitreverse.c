@@ -20,7 +20,7 @@
 #include "../../gsl/fft/bitreverse.h"
 
 #include <config.h>
-#include <gsl/gsl_fft.h>
+#include <gsl_fft.h>
 
 #include "../../gsl/fft/complex_internal.h"
 
