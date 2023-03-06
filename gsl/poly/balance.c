@@ -16,11 +16,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-
+#include <stddef.h>
+#include <math.h>
 static void balance_companion_matrix (double *m, size_t n);
 
 #define RADIX 2
 #define RADIX2 (RADIX*RADIX)
+
+/* C-style matrix elements */
+#ifndef MAT
+#define MAT(m,i,j,n) ((m)[(i)*(n) + (j)])
+#endif
 
 static void
 balance_companion_matrix (double *m, size_t nc)

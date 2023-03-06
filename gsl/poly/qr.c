@@ -17,7 +17,17 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
+#include <stddef.h>
+#include <gsl_complex.h>
+#include <gsl_errno.h>
+#include <gsl_machine.h>
+#include <math.h>
 static int qr_companion (double *h, size_t nc, gsl_complex_packed_ptr z);
+
+#ifndef FMAT
+/* Fortran-style matrix elements */
+#define FMAT(m,i,j,n) ((m)[((i)-1)*(n) + ((j)-1)])
+#endif
 
 static int
 qr_companion (double *h, size_t nc, gsl_complex_packed_ptr zroot)

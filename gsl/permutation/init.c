@@ -19,8 +19,8 @@
 
 #include <config.h>
 #include <stdlib.h>
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_permutation.h>
+#include <gsl_errno.h>
+#include <gsl_permutation.h>
 
 gsl_permutation *
 gsl_permutation_alloc (const size_t n)

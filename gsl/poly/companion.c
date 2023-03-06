@@ -17,7 +17,15 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
+#include <stddef.h>
+
 static void set_companion_matrix (const double *a, size_t n, double *m);
+
+
+/* C-style matrix elements */
+#ifndef MAT
+#define MAT(m,i,j,n) ((m)[(i)*(n) + (j)])
+#endif
 
 static void
 set_companion_matrix (const double *a, size_t nc, double *m)

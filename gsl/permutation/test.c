@@ -21,10 +21,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <gsl/gsl_permutation.h>
-#include <gsl/gsl_permute_double.h>
-#include <gsl/gsl_test.h>
-#include <gsl/gsl_ieee_utils.h>
+#include <gsl_permutation.h>
+#include <gsl_permute_double.h>
+#include <gsl_test.h>
+#include <gsl_ieee_utils.h>
 
 unsigned int p5[120][5] = {
   {0, 1, 2, 3, 4}, {0, 1, 2, 4, 3}, {0, 1, 3, 2, 4}, {0, 1, 3, 4, 2},

@@ -18,10 +18,10 @@
  */
 
 #include <config.h>
-#include <gsl/gsl_errno.h>
+#include <gsl_errno.h>
 
 /* Compile all the inline functions */
 
 #define COMPILE_INLINE_STATIC
 #include "../../gsl/build.h"
-#include <gsl/gsl_permutation.h>
+#include <gsl_permutation.h>

@@ -19,8 +19,8 @@
 
 #include <config.h>
 #include <stdio.h>
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_permutation.h>
+#include <gsl_errno.h>
+#include <gsl_permutation.h>
 
 #define IN_FORMAT "%lu"
 
