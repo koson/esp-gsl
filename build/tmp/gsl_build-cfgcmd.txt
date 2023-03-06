@@ -1,0 +1,1 @@
+cmd='D:/GitHubRepos/__ESP32_GSL/test-esp-gsl/components/esp-gsl/gsl_2_7/configure;--host=xtensa'
