@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-
+#include <gsl_fft_real_float.h>
 TYPE(gsl_fft_real_wavetable) *
 FUNCTION(gsl_fft_real_wavetable,alloc) (size_t n)
 {

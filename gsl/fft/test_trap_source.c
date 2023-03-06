@@ -17,12 +17,22 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
+#include "gsl_fft_complex_float.h"
+#include "gsl_complex.h"
+#include "templates_on.h"
+#include "gsl_fft_complex.h"
+#include "gsl_fft_complex.h"
 void FUNCTION(test,trap) (void);
+
+#define BASE double
+#include "../../gsl/cblas/source_trsv_c.h"
+#undef BASE
 
 void
 FUNCTION(test,trap) (void)
 {
   int status ;
+
 
   BASE real_x ;
   BASE complex_x ;

@@ -7,6 +7,7 @@ set(COMPONENT_SRCDIRS
 	"gsl/err"
 	"gsl/sys"
 	"gsl/poly"
+	"gsl/fft"
                       )
 
 set(COMPONENT_ADD_INCLUDEDIRS

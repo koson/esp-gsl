@@ -17,7 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-
+#include <stddef.h>
 static int FUNCTION(fft_complex,bitreverse_order) (BASE data[], 
                                                    const size_t stride,
                                                    const size_t n,

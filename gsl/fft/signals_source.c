@@ -18,7 +18,7 @@
  */
 
 #include "../../gsl/fft/signals.h"
-
+#include <stddef.h>
 int
 FUNCTION(fft_signal,complex_pulse) (const size_t k,
                                     const size_t n,

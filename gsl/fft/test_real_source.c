@@ -20,6 +20,9 @@
 #include "../../gsl/fft/bitreverse.h"
 #include "../../gsl/fft/compare.h"
 #include "../../gsl/fft/signals.h"
+#include "templates_on.h"
+#include "gsl_fft_halfcomplex.h"
+#include "gsl_fft_real.h"
 
 void FUNCTION(test_real,func) (size_t stride, size_t n);
 void FUNCTION(test_real,bitreverse_order) (size_t stride, size_t n);

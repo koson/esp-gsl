@@ -17,6 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
+#include "gsl_fft_halfcomplex_float.h"
 int
 FUNCTION(gsl_fft_halfcomplex,radix2_backward) (BASE data[],
                                                const size_t stride,
