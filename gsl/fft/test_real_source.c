@@ -20,9 +20,15 @@
 #include "../../gsl/fft/bitreverse.h"
 #include "../../gsl/fft/compare.h"
 #include "../../gsl/fft/signals.h"
-#include "templates_on.h"
 #include "gsl_fft_halfcomplex.h"
 #include "gsl_fft_real.h"
+#include "gsl_fft_real_float.h"
+
+#define BASE_DOUBLE
+#include "templates_on.h"
+#include "block/block_source.c"
+#include "templates_off.h"
+#undef  BASE_DOUBLE
 
 void FUNCTION(test_real,func) (size_t stride, size_t n);
 void FUNCTION(test_real,bitreverse_order) (size_t stride, size_t n);
@@ -104,6 +110,7 @@ void FUNCTION(test_real,func) (size_t stride, size_t n)
 
   gsl_test (status, NAME(gsl_fft_halfcomplex) 
             " with data from signal_noise, n = %d, stride = %d", n, stride);
+
 
   FUNCTION(gsl_fft_real_workspace,free) (rwork);
   FUNCTION(gsl_fft_real_wavetable,free) (rw);

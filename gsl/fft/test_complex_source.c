@@ -21,6 +21,15 @@
 #include "../../gsl/fft/compare.h"
 #include "../../gsl/fft/signals.h"
 
+
+#undef BASE
+#ifndef BASE
+#define BASE double
+#include "../../gsl/cblas/source_trsv_c.h"
+//#undef BASE
+#endif
+#include "templates_on.h"
+
 void FUNCTION(test_complex,func) (size_t stride, size_t n);
 int FUNCTION(test,offset) (const BASE data[], size_t stride, 
                            size_t n, size_t offset);

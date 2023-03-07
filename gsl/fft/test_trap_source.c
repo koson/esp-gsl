@@ -18,15 +18,18 @@
  */
 
 #include "gsl_fft_complex_float.h"
+#include <gsl_fft_halfcomplex.h>
 #include "gsl_complex.h"
 #include "templates_on.h"
 #include "gsl_fft_complex.h"
-#include "gsl_fft_complex.h"
+#include "gsl_fft_real.h"
+#include "gsl_test.h"
+
+
+
+
 void FUNCTION(test,trap) (void);
 
-#define BASE double
-#include "../../gsl/cblas/source_trsv_c.h"
-#undef BASE
 
 void
 FUNCTION(test,trap) (void)

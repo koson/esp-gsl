@@ -22,8 +22,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <gsl/gsl_sys.h>
-#include <gsl/gsl_machine.h>
+#include <gsl_sys.h>
+#include <gsl_machine.h>
 
 #if HAVE_VPRINTF
 #ifdef STDC_HEADERS
@@ -33,7 +33,7 @@
 #endif
 #endif
 
-#include <gsl/gsl_test.h>
+#include <gsl_test.h>
 
 static unsigned int tests = 0;
 static unsigned int passed = 0;

@@ -3,6 +3,7 @@
 
 set(COMPONENT_SRCDIRS 
 	"gsl/blas"
+	"gsl/block"
 	"gsl/specfunc"
 	"gsl/err"
 	"gsl/sys"

@@ -16,7 +16,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-
+#ifndef BASE
+#define BASE double
+#include "../../gsl/cblas/source_trsv_c.h"
+#undef BASE
+#endif
 int
 FUNCTION(gsl_fft_halfcomplex,unpack) (const BASE halfcomplex_coefficient[],
                                       BASE complex_coefficient[],
